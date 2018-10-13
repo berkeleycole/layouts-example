@@ -1,0 +1,77 @@
+#card-layout {
+	min-width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 100px;
+}
+
+#card-layout .card {
+	min-height: 300px;
+	min-width: 460px;
+	max-width: 400px;
+	margin: 20px;
+}
+
+.card .card-image {
+	min-height: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.card .card-content {
+	border: 1px solid #e7e7e7;
+	border-top: none;
+	padding: 20px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.card h4 {
+	font-size: 25px;
+	color: #545454;
+}
+
+#card1 {
+	background-image: url('../images/ferns.jpg');
+	background-position: top;
+}
+
+#card2 {
+	background-image: url('../images/beach-long.jpg');
+	background-position: top;
+}
+
+#card3 {
+	background-image: url('../images/birds.jpg');
+}
+
+#card4 {
+	background-image: url('../images/mountain-water.jpg');
+	background-position: top;
+}
+
+#card5 {
+	background-image: url('../images/europe.jpg');
+}
+
+#card6 {
+	background-image: url('../images/sunset.jpg');
+}
+
+@media (min-width: 350px) and (max-width: 499px) {
+	#card-layout {
+		padding: 0;
+	}
+
+	#card-layout .card {
+		min-height: 300px;
+		min-width: 100%;
+		max-width: 100%;
+		margin: 0;
+	}
+}

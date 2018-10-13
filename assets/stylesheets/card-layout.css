@@ -1,5 +1,15 @@
 #card-layout {
 	min-width: 100vw;
+}
+
+#card-layout h2 {
+	font-family: 'Nanum Myeongjo', serif;
+	font-size: 40px;
+	margin: 100px 0;
+	text-align: center;
+}
+
+#card-layout .articles-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -31,7 +41,8 @@
 	border-bottom-right-radius: 3px;
 }
 
-.card h4 {
+.card-content h4 {
+	font-family: 'Nanum Gothic', sans-serif;
 	font-size: 25px;
 	color: #545454;
 }
@@ -64,7 +75,7 @@
 }
 
 @media (min-width: 350px) and (max-width: 499px) {
-	#card-layout {
+	#card-layout .articles-container {
 		padding: 0;
 	}
 
